@@ -13,7 +13,7 @@ def sushi_choice(cost_Li,kcal_Li,limit):
     #print(list_len)
     dp = [[0 for i in range(limit+1)]for j in range(list_len)]#横軸は制限数、縦軸は選ぶアイテム数
 
-    for i in range(limit+1):#最初の行はcalが8以上なら食える！ 1からはじめないと、０はなにもできないから
+    for i in range(limit+1):#最初の行はcalが8以上なら食える！ 1からはじめないと、0はなにもできないから
         if(kcal_Li[0] <= i):
             dp[0][i] = cost_Li[0]
 
